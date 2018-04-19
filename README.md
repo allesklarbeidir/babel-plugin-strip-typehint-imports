@@ -31,7 +31,7 @@ npm install --save-dev babel-plugin-strip-typehint-imports
 With yarn
 
 ```bash
-npm install --save-dev babel-plugin-strip-typehint-imports
+yarn add --dev babel-plugin-strip-typehint-imports
 ```
 
 And add the plugin to your .babelrc file
