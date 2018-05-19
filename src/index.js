@@ -13,11 +13,11 @@ export default api => {
         const {opts: options} = state;
         if (!node.trailingComments) return;
         const comments = node.trailingComments
-          .filter(comment => comment.loc.start.line === node.loc.start.line)
+          .filter(comment => comment.loc.start.line === node.loc.end.line)
           .filter(comment =>
-            comment.value.trim() === options.text || DEFAULT_TEXT);
+            comment.value.trim() === (options.text || DEFAULT_TEXT));
 
-        if (comments) {
+        if (comments.length > 0) {
           path.remove();
         }
       }

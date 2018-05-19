@@ -68,6 +68,36 @@ const testCases = [
     name: 'inline comment',
     input: `import a from 'b'; /* typehints-only */`,
     output: ``
+  },
+  {
+    name: 'real life example',
+    input: `import { CanvasObject } from '../CanvasObject';
+
+/**
+ * An object internal to the visualizer.
+ */
+export class VisualizerInternalObject extends CanvasObject {
+  /**
+   * Add the object to the proper dictionary of all objects.
+   */
+  addToObjectsDict() {
+    this.map.visualizerInternalObjects.push(this);
+  }
+}
+`, output: `import { CanvasObject } from '../CanvasObject';
+
+/**
+ * An object internal to the visualizer.
+ */
+export class VisualizerInternalObject extends CanvasObject {
+  /**
+   * Add the object to the proper dictionary of all objects.
+   */
+  addToObjectsDict() {
+    this.map.visualizerInternalObjects.push(this);
+  }
+}
+`
   }
 ];
 
