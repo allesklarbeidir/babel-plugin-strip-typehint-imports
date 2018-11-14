@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-strip-typehint-imports",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "Transform Javascript operators to TensorFlow.js operators",
   "main": "dist/index.js",
   "author": "Bary Levi <barylevi@gmail.com> (https://github.com/bary12)",
