@@ -34,8 +34,5 @@
   "repository": {
     "type": "git",
     "url": ""
-  },
-  "peerDependencies": {
-    "babel-core": "^6.26.0 || ^7.0.0-bridge.0"
   }
 }
