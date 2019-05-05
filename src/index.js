@@ -1,10 +1,6 @@
-// eslint-disable-next-line no-unused-vars
-import {PluginObj, types} from 'babel-core';
-
 const DEFAULT_TEXT = 'typehints-only';
 
 export default api => {
-  /** @type {PluginObj} */
   const plugin = {
     name: 'strip-typehint-imports',
     visitor: {
@@ -24,4 +20,5 @@ export default api => {
     }
   };
   return plugin;
+  
 };
